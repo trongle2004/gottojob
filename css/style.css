@@ -1,0 +1,249 @@
+.carousel-item img {
+    max-height: 300px; /* Giới hạn chiều cao hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+/* Custom Icons */
+
+.custom-icon-lg {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 70px;
+}
+
+.custom-block-wrap:hover .custom-icon-lg {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--primary-color) !important;
+    background: rgba(var(--primary-color-rgb), 0.15);
+}
+
+.custom-list-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.custom-block-wrap:hover .custom-list-item i {
+    transform: translateX(5px);
+    background: rgba(var(--primary-color-rgb), 0.15);
+}
+
+
+/* Custom Block Hover Effects */
+
+.custom-block-wrap {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.custom-block-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.custom-block-wrap .mt-4.text-center {
+    margin-top: auto !important;
+}
+
+
+/* Custom List Styling */
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.custom-list-item:hover {
+    transform: translateX(5px);
+}
+
+
+/* Section Title Styling */
+
+.section-title-wrap {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+
+/* Custom Block Info Styling */
+
+.custom-block-info {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.custom-block-info-item {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.custom-block-info-title {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.custom-block-info-item strong {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+
+/* Custom Button Styling */
+
+.custom-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+    width: 220px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.custom-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+
+/* Button Container */
+
+.mt-4.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 2rem !important;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 0;
+    text-align: center;
+    background: linear-gradient(to bottom, transparent, white 20%);
+}
+
+
+/* Social Benefits Section */
+
+.custom-block-info-item i {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    line-height: 60px;
+}
+
+.custom-block-info-item:hover i {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(var(--primary-color-rgb), 0.15);
+}
+
+.custom-block-info-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.custom-block-info-item p {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .custom-block-info {
+        flex-direction: column;
+    }
+    .custom-block-info-item {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Add CSS Variables for RGB values */
+
+:root {
+    --primary-color-rgb: 0, 123, 255;
+    /* Adjust this value to match your primary color */
+}
